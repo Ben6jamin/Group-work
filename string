@@ -1,0 +1,11 @@
+#!/bin/bash
+
+FILENAME=${1}
+IFS=$'\n'
+i=1
+
+for line in $(cat 2022-10-12-file.txt)
+do
+echo "line ${i} : ${line}"
+((i++))
+done
